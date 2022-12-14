@@ -55,7 +55,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttinDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fif-xE-vX1"/>
+                                    <action selector="buttonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="QHv-U2-niI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,7 +73,7 @@
                     <connections>
                         <outlet property="greenView" destination="Zkd-sE-Cny" id="CyY-bP-tim"/>
                         <outlet property="redView" destination="fEA-Vg-d9U" id="Fqn-tr-4AN"/>
-                        <outlet property="switchButton" destination="Z8P-Sv-GW1" id="YnF-J8-dCF"/>
+                        <outlet property="switchButton" destination="Z8P-Sv-GW1" id="YPf-SC-WZD"/>
                         <outlet property="yellowView" destination="KLW-Kb-2at" id="xrK-cy-2pn"/>
                     </connections>
                 </viewController>

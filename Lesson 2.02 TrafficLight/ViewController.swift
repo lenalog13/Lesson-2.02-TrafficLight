@@ -16,38 +16,46 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var switchButton: UIButton!
     
-    private let filletSize: CGFloat = 75
+    private let lightIsOff: CGFloat = 1
+    private let lightIsOn: CGFloat = 0.3
     
     private var counter = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redView.layer.cornerRadius = filletSize
-        yellowView.layer.cornerRadius = filletSize
-        greenView.layer.cornerRadius = filletSize
         
         switchButton.layer.cornerRadius = 10
     }
+    
+    override func viewWillLayoutSubviews() {
+        redView.layer.cornerRadius = redView.frame.width / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
+    }
 
-    @IBAction func buttinDidTapped(_ sender: Any) {
-        switchButton.setTitle("NEXT", for: .normal)
+    
+    
+    @IBAction func buttonDidTapped() {
+        if  switchButton.currentTitle == "START" {
+            switchButton.setTitle("NEXT", for: .normal)
+        }
+        
         switch counter {
         case 1:
-            redView.alpha = 1
-            greenView.alpha = 0.3
+            redView.alpha = lightIsOff
+            greenView.alpha = lightIsOn
             counter += 1
         case 2:
-            yellowView.alpha = 1
-            redView.alpha = 0.3
+            yellowView.alpha = lightIsOff
+            redView.alpha = lightIsOn
             counter += 1
         case 3:
-            greenView.alpha = 1
-            yellowView.alpha = 0.3
+            greenView.alpha = lightIsOff
+            yellowView.alpha = lightIsOn
             counter = 1
         default:
             break
         }
-        
     }
     
 }
