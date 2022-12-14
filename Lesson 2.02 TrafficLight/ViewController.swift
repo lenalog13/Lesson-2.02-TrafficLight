@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         redView.layer.cornerRadius = filletSize
         yellowView.layer.cornerRadius = filletSize
         greenView.layer.cornerRadius = filletSize
+        
+        switchButton.layer.cornerRadius = 10
     }
 
     @IBAction func buttinDidTapped(_ sender: Any) {
