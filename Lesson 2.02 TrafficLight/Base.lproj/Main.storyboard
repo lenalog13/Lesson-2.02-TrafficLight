@@ -48,12 +48,16 @@
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
+                                    <color key="titleColor" systemColor="secondaryLabelColor"/>
                                     <color key="titleShadowColor" name="AccentColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttinDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fif-xE-vX1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                         <constraints>
                             <constraint firstItem="fmG-Sb-d6a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Eqg-wM-xxZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z8P-Sv-GW1" secondAttribute="bottom" constant="40" id="Stn-FB-qwp"/>
@@ -64,8 +68,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenView" destination="Zkd-sE-Cny" id="yLI-Uk-xBY"/>
+                        <outlet property="greenView" destination="Zkd-sE-Cny" id="CyY-bP-tim"/>
                         <outlet property="redView" destination="fEA-Vg-d9U" id="Fqn-tr-4AN"/>
+                        <outlet property="switchButton" destination="Z8P-Sv-GW1" id="YnF-J8-dCF"/>
                         <outlet property="yellowView" destination="KLW-Kb-2at" id="xrK-cy-2pn"/>
                     </connections>
                 </viewController>
@@ -78,8 +83,11 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
